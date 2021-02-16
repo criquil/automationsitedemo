@@ -135,10 +135,6 @@ function App() {
 
 
     </section>
-    <footer class="container">
-		
-        <p><small>Disclaimer: This project is a personal site meant to be used as a help test site to be able to perform some automation test on demand.</small></p>
-    </footer>
     </div>
   );
 }
