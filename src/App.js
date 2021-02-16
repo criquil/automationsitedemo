@@ -1,8 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
 import './jsQuizEngine.css'
-
-function App() {
+import {useHistory} from 'react-router-dom'
+export default function App() {
+  const history = useHistory();
   return (
     <div className="App">
 
@@ -139,4 +140,4 @@ function App() {
   );
 }
 
-export default App;
+
