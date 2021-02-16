@@ -1,10 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import './jsQuizEngine.css';
-import {useHistory} from 'react-router-dom';
 import NavBar from './components/navbar';
 export default function App() {
-  const history = useHistory();
   return (
     <div className="App">
     <NavBar/>
