@@ -5,28 +5,15 @@ import './jsQuizEngine.css'
 function App() {
   return (
     <div className="App">
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="?">Cristian's test site</a>
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <div id="navbar" class="collapse navbar-collapse">
-                <ul id="navbar-intest" class="nav navbar-nav">
-                    <li><a href="playground.html">Testing Forms Playground</a></li>
-                </ul>
 
-            </div>
-        </div>
-    </nav>
     <section class="container">
 
-	<div class="alert alert-danger" id="news">
+	
+  
+  
+  
+  
+  <div class="alert alert-danger" id="news">
 	    <strong>Notice: This is a testing site meant to be used for automation test trainings</strong>
         </div>
 	    
