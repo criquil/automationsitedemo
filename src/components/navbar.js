@@ -1,25 +1,34 @@
 import React from 'react'
 import { useAuth0 } from '@auth0/auth0-react';
-import LoginButton from './loginButton'
+import ContainerButtons from "./containerButtons"
+import Profile from './profile';
 const navbar = () => {
     return (
         <div>
-            <nav class="navbar navbar-inverse navbar-fixed-top">
-                <div class="container">
-                    <div class="navbar-header">
-                        <a class="navbar-brand" href="?">Cristian's test site</a>
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
+            <nav className="navbar navbar-inverse navbar-fixed-top">
+                <div className="container">
+                    <div className="navbar-header">
+                        <a className="navbar-brand" href="#">Cristian's test site</a>
+                        <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span className="sr-only">Toggle navigation</span>
+                            <span className="icon-bar"></span>
+                            <span className="icon-bar"></span>
+                            <span className="icon-bar"></span>
                         </button>
                     </div>
-                    <div id="navbar" class="collapse navbar-collapse">
-                        <ul id="navbar-intest" class="nav navbar-nav">
-                            <li><a href="playground.html">Testing Forms Playground</a></li>
+                    <div id="navbar" className="collapse navbar-collapse">
+                        <ul id="navbar-intest" className="nav navbar-nav">
+                            <li><a href="">Testing Forms Playground</a></li>
                         </ul>
-                        <LoginButton />
+                        <>
+                        <>
+                        <Profile />
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <ContainerButtons/>
+                        </>                       
+                        </>
                     </div>
                 </div>
             </nav>

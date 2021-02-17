@@ -1,32 +1,15 @@
-﻿body {
-}
-
-.question-pool .question .description img {
-    width: 100%;
-}
-
-.social-nav .twitter-share-button {
-    margin-top: 1em;
-}
-
-#navbar.in .social-nav .twitter-share-button {
-    margin-left: 1em;
-}
-
-#jsQuizEngine > .quiz > h3, #jsQuizEngine > .score > h3 {
-    margin-top: 0;
-}
-#jsQuizEngine > .quiz > h5, #jsQuizEngine > .score > h5 {
-    margin-bottom: 0.25em;
-}
-
-#titleScreen > .jumbotron {
+﻿#titleScreen > .jumbotron {
     background: #00abec url(Hero.jpg) ;
       -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   
+}
+#notLoggedScreen{
+
+  
+text-align: center;
 }
 
 #titleScreen > .jumbotron p {
@@ -39,9 +22,7 @@
 
     visibility: hidden;
 }
-html {
-    background: linear-gradient(100deg, #000, grey);
-  }
+
   #home-login {
     margin-top: 70px;
     height: 100%;
@@ -162,3 +143,26 @@ html {
   .box-login span {
     color: grey;
   }
+  #profileTXT{
+    color:white;
+  }
+  .profileClass{
+    float: right;
+  }
+  #profileIMG{
+    float: right;
+    width: 25%;
+
+  }
+  #notLoggedTitleTXT{
+    text-align: center;
+  }
+  #loginBTN, #logoutBTN{
+    display:block;
+    border-radius: 50%;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 25px;
+    color: antiquewhite;
+    background-color: #4728C5;
+  }
+
