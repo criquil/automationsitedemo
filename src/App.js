@@ -19,10 +19,13 @@ function App() {
             
             <NavBar />
             <Switch>
-            <Route path="/" exact>   
+            <Route path="/">   
+            <div>Hola Wachin unloged!</div>
+            </Route>
+            <Route path="/home">   
             <div>Hola Wachin home!</div>
             </Route>
-            <Route path="/playground" exact>   
+            <Route path="/playground">   
             <div>Hola Wachin playground!</div>
             </Route>
             </Switch>
