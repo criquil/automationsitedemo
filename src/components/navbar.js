@@ -8,7 +8,7 @@ const navbar = () => {
             <nav className="navbar navbar-inverse navbar-fixed-top">
                 <div className="container">
                     <div className="navbar-header">
-                        <a className="navbar-brand" href="#">Cristian's test site</a>
+                        <a className="navbar-brand" href="/automationsitedemo/home">Cristian's test site</a>
                         <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                             <span className="sr-only">Toggle navigation</span>
                             <span className="icon-bar"></span>
@@ -18,7 +18,7 @@ const navbar = () => {
                     </div>
                     <div id="navbar" className="collapse navbar-collapse">
                         <ul id="navbar-intest" className="nav navbar-nav">
-                            <li><a href="">Testing Forms Playground</a></li>
+                            <li><a href="/automationsitedemo/playground">Testing Forms Playground</a></li>
                         </ul>
                         <>
                         <>

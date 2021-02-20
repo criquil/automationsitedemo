@@ -1,39 +1,49 @@
 
 import './App.css';
 import NavBar from './components/navbar';
-import HomeContent from './components/homeContent'
-import Footer from './components/footer'
-import { BrowserRouter as Router,
-Switch,
-Route,
-Link
-} from 'react-router-dom'
+import HomeContent from './components/homeContent';
+import Footer from './components/footer';
+import WelcomePage from './components/welcome';
+import PlayGround from './components/playground';
+import Authenticated from './components/authenticated';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+} from 'react-router-dom';
 function App() {
-//export default function App() {
+    //export default function App() {
 
-    
+
     return (
-     <Router>
-         
-        <div className="container">
-            
-            <NavBar />
-            <Switch>
-            <Route path="/">   
-            <div>Hola Wachin unloged!</div>
-            </Route>
-            <Route path="/home">   
-            <div>Hola Wachin home!</div>
-            </Route>
-            <Route path="/playground">   
-            <div>Hola Wachin playground!</div>
-            </Route>
-            </Switch>
-            <Footer />
-        </div>
-     </Router>
+        <Router>
+
+            <div className="App">
+
+                <NavBar />
+                <Switch>
+                    <Route path="/automationsitedemo/home">
+                    <Authenticated>
+                        <HomeContent />
+                    </Authenticated>
+                    </Route>
+                    <Route path="/automationsitedemo/playground">
+                    <Authenticated>
+                        <PlayGround />
+                    </Authenticated>
+                    </Route>
+                    <Route path="/automationsitedemo">
+                        
+                        <WelcomePage />
+                        
+                    </Route>
+                </Switch>
+                <Footer />
+            </div>
+        </Router>
     )
-    
+
 }
 export default App
 
