@@ -34,9 +34,9 @@ function App() {
                     </Authenticated>
                     </Route>
                     <Route path="/automationsitedemo">
-                        
+                    <Authenticated>
                         <WelcomePage />
-                        
+                        </Authenticated>
                     </Route>
                 </Switch>
                 <Footer />
