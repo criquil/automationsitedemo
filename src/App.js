@@ -24,19 +24,17 @@ function App() {
                 <NavBar />
                 <Switch>
                     <Route path="/automationsitedemo/home">
-                    <Authenticated>
                         <HomeContent />
-                    </Authenticated>
                     </Route>
                     <Route path="/automationsitedemo/playground">
-                    <Authenticated>
+
                         <PlayGround />
-                    </Authenticated>
+
                     </Route>
                     <Route path="/automationsitedemo">
-                    <Authenticated>
+
                         <WelcomePage />
-                        </Authenticated>
+
                     </Route>
                 </Switch>
                 <Footer />
