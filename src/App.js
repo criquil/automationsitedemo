@@ -23,19 +23,19 @@ function App() {
 
                 <NavBar />
                 <Switch>
-                    <Route path="/lorem/" title="Lorem Ipsum">
+                    <Route path="/lorem/">
                   
-                        <HomeContent />
+                        <HomeContent title="Lorem Ipsum"/>
                     
                     </Route>
-                    <Route path="/forms/" title="Forms Page">
+                    <Route path="/forms/">
                   
-                        <PlayGround />
+                        <PlayGround title="Forms Page"/>
                   
                     </Route>
-                    <Route path="/" title="Homme Page">
+                    <Route path="/">
                         
-                        <WelcomePage />
+                        <WelcomePage title="Homme Page"/>
                         
                     </Route>
                 </Switch>
