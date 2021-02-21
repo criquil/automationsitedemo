@@ -23,12 +23,12 @@ function App() {
 
                 <NavBar />
                 <Switch>
-                    <Route path="/home/">
+                    <Route path="/lorem/">
                   
                         <HomeContent />
                     
                     </Route>
-                    <Route path="/playground/">
+                    <Route path="/forms/">
                   
                         <PlayGround />
                   
