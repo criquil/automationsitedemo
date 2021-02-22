@@ -1,11 +1,11 @@
 import React from 'react'
-import { useAuth0 } from '@auth0/auth0-react'
+import loading from "../loading.gif"
 
 const IsLoading = () => {
 
     return (
         <div id="isLoading">
-            <img src="isLoading.gif"></img>
+           <img src={loading} alt="loading..."/>
         </div>
     )
 

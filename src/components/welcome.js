@@ -8,7 +8,8 @@ const WelcomePage = () => {
         return (
             <div>
                 <section className="container">
-                    Welcome!
+                     <h1 id="HomeHeader">Welcome to my Atomation Testing Training Site</h1>
+                     <h2></h2>
                 </section>
 
             </div>

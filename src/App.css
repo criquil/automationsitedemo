@@ -190,3 +190,15 @@ top:auto;
 .playgroundClass{
   margin-left: 40%;
 }
+#isLoading{
+width: 100%;
+height: 100%;
+justify-content: center;
+display: flex;
+ position: relative;
+ top: 50%;
+}
+#HomeHeader{
+  text-align:  center;
+  
+}
