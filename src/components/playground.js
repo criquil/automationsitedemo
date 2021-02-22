@@ -2,7 +2,11 @@ import React from 'react'
 import { useAuth0 } from '@auth0/auth0-react'
 const PlayGround = () => {
     const { loginWithRedirect, isAuthenticated } = useAuth0();
-    if (isAuthenticated) {
+    const {isLoading} = useAuth0();
+    if (isLoading) return <div>Loading....</div>
+   
+   
+   else if (isAuthenticated) {
         return (
             <div>
                 <section className="container">
