@@ -1,4 +1,16 @@
 {
+  "scripts": {
+    "xdn": "xdn",
+    "xdn:dev": "xdn dev",
+    "xdn:build": "xdn build",
+    "xdn:deploy": "xdn deploy",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
   "homepage": "http://criquil.github.io/automationsitedemo",
   "name": "",
   "version": "1.1.0",
@@ -14,14 +26,6 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.2",
     "web-vitals": "^1.1.0"
-  },
-  "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -42,6 +46,10 @@
     ]
   },
   "devDependencies": {
+    "@xdn/cli": "^2.46.3",
+    "@xdn/core": "^2.46.3",
+    "@xdn/devtools": "^2.46.3",
+    "@xdn/prefetch": "^2.46.3",
     "gh-pages": "^3.1.0"
   }
 }
