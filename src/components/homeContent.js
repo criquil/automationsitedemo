@@ -133,7 +133,7 @@ const HomeContent = () => {
             <div onLoadStart={()=>loginWithRedirect()}>
                 <br></br>
 
-                <h1 id="notLoggedTitleTXT">Welcome to my Atomation Testing Site</h1>
+                <h1 id="notLoggedTitleTXT">Welcome to my Automation Testing Site</h1>
                 <h3 id="notLoggedScreen">Please click Login button to log into the application or sign up!</h3>
                 </div>
         )
