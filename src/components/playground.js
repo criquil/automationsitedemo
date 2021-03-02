@@ -52,14 +52,15 @@ const PlayGround = () => {
                                 </div>
 
                                 <div>
-                                    <p>Please select your age:</p>
+                                <br></br>
+                                    <strong>Please select your age:</strong>
 
                                     <label for="age1"><input type="radio" id="age1" name="age" value="30" />0 - 30</label>
-                                    <br></br>
+                                   
                                     <label for="age2"><input type="radio" id="age2" name="age" value="60" />31 - 60</label>
-                                    <br></br>
+                                   
                                     <label for="age3"><input type="radio" id="age3" name="age" value="100" />61 - 100</label>
-                                    <br></br><br></br> <br></br>
+                                    <br></br>
                                 </div>
                                 <div>
                                     <label for="url">Personal Site URL</label>

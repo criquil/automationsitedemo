@@ -4,7 +4,7 @@ import NavBar from './components/navbar';
 import HomeContent from './components/homeContent';
 import Footer from './components/footer';
 import WelcomePage from './components/welcome';
-import PlayGround from './components/playground';
+import PlayGround from './components/playground2';
 import Authenticated from './components/authenticated';
 import {
     BrowserRouter as Router,

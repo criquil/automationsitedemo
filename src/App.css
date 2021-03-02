@@ -202,3 +202,42 @@ display: flex;
   text-align:  center;
   
 }
+
+
+
+.playgroundClass label
+{
+    display: block;
+    margin: 10px 0;
+}
+
+.playgroundClass label span
+{
+    display: inline-block;
+    text-align: right;
+    width: 100px;
+}
+
+.DeveloperGroup label
+{
+  text-align: right;
+    display:initial;
+    
+}
+.ExceptRadio{
+ 
+align-content: space-between;
+
+
+  padding-right: 10px;
+  padding-left: 5%;
+
+}
+.DeveloperGroup{
+
+}
+
+
+.errorClass{
+  color: red;
+}
