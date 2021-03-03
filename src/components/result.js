@@ -17,19 +17,20 @@ const intNumber = Math.floor(Math.random() * (max - min)) + min;
                 <section className="container">
                     <h1 id="ResultHeader">Form Data Validation</h1>
 
-                    <div><span id="Texto" className="parrafo">
-                        Se llama <span id="Title">{datos.Title}</span> <span id="FirstName">{datos.First_name}</span> <span id="LastName">{datos.Last_name}</span>
- . Tambien se le conoce como <span id="NickName">{datos.Nick_name}.</span>
-                        <br></br>
-Afirma que {datos.Developer.toLowerCase()} es Software Developer.
-<br></br>
-Para contactarle, simplemente llame al: <span>{datos.Mobile_number}{intNumber}</span>, o escríbale a su casilla de eMail: {datos.Email} .
-<br></br>
-Si quieres conocerle mas, nos cuenta lo siguiente: <span>{datos.about}</span>.<br></br>
-O bien lee su Bio en su <a href={datos.Url}>Web</a>.
+                    <div>
+                            <span id="Texto" className="parrafo">
+                                Se llama <span id="Title">{datos.Title}</span> <span id="FirstName">{datos.First_name}</span> <span id="LastName">{datos.Last_name}</span>
+                                . Tambien se le conoce como <span id="NickName">{datos.Nick_name}.</span>
+                                                        <br></br>
+                                Afirma que <span id="Developer">{datos.Developer.toLowerCase()}</span> es Software Developer.
+                                <br></br>
+                                Para contactarle, simplemente llame al: <span id="Mobile">{datos.Mobile_number}{intNumber}</span>, o escríbale a su casilla de eMail: <span id="Email">{datos.Email}</span> .
+                                <br></br>
+                                Si quieres conocerle mas, nos cuenta lo siguiente: <span id="About">{datos.about.substring(0, 5)}</span>.<br></br>
+                                O bien lee su Bio en su <a id="Url" href={datos.Url}>{datos.Url}</a>.
 
 
-                                            </span></div>
+                            </span></div>
 
 
 
