@@ -6,6 +6,7 @@ import Footer from './components/footer';
 import WelcomePage from './components/welcome';
 import PlayGround from './components/playground2';
 import Authenticated from './components/authenticated';
+import ResultData from "./components/result"
 import {
     BrowserRouter as Router,
     Switch,
@@ -24,21 +25,27 @@ function App() {
 
                 <NavBar />
                 <Switch>
+                    <Route path="/result/">
+
+                        <ResultData title="Result Data" />
+
+                    </Route>
                     <Route path="/lorem/">
-                  
-                        <HomeContent title="Lorem Ipsum"/>
-                    
+
+                        <HomeContent title="Lorem Ipsum" />
+
                     </Route>
                     <Route path="/forms/">
-                  
-                        <PlayGround title="Forms Page"/>
-                  
+
+                        <PlayGround title="Forms Page" />
+
                     </Route>
                     <Route path="/">
-                        
-                        <WelcomePage title="Homme Page"/>
-                        
+
+                        <WelcomePage title="Homme Page" />
+
                     </Route>
+
                 </Switch>
                 <Footer />
             </div>

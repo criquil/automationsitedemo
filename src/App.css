@@ -245,3 +245,6 @@ align-content: space-between;
   display: flex;
   margin-inline: auto;
 }
+.parrafo p{
+display: inline;
+}
