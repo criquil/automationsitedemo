@@ -22,7 +22,7 @@ const PlayGround = () => {
             {errors.First_name?.type === "maxLength" && <p className="errorClass"> Your input exceeds maxLength(80)</p>}
           
             <label id="LBLPass">Password: </label>
-            <input id="TXTPass" type="text" placeholder="Last_name" name="Last_name" ref={register({ required: true, maxLength: 100 })} />
+            <input id="TXTPass" type="text" placeholder="Last name" name="Last_name" ref={register({ required: true, maxLength: 100 })} />
          
             {errors.Last_name?.type === "required" && <p className="errorClass"> Your input is required</p>}
             {errors.Last_name?.type === "maxLength" && <p className="errorClass"> Your input exceeds maxLength(100)</p>}
@@ -40,7 +40,7 @@ const PlayGround = () => {
             {errors.Url?.type === "pattern" && <p className="errorClass"> Only valid URL format is allowed.</p>}
             
             <label id="LBLMobile">Mobile Number: </label>
-            <input id="TXTMobile" type="tel" placeholder="Mobile_number" name="Mobile_number" ref={register({ required: true, minLength: 6, maxLength: 12, pattern: /^[0-9]*$/ })} />
+            <input id="TXTMobile" type="tel" placeholder="Mobile number" name="Mobile_number" ref={register({ required: true, minLength: 6, maxLength: 12, pattern: /^[0-9]*$/ })} />
            
             {errors.Mobile_number?.type === "required" && <p className="errorClass"> Your input is required</p>}
             {errors.Mobile_number?.type === "pattern" && <p className="errorClass"> Only numbers are allowed.</p>}
