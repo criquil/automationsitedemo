@@ -241,3 +241,7 @@ align-content: space-between;
 .errorClass{
   color: red;
 }
+#BTNSubmit{
+  display: flex;
+  margin-inline: auto;
+}
