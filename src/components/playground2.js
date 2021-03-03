@@ -82,7 +82,7 @@ const PlayGround = () => {
                         <br></br>
                         <div>
                             <label id="LBLDevYes" className="ExceptRadio">Y</label>
-                            <input id="RADButDevYes" name="Developer" type="radio" value="Yes" ref={register({ required: true })} />
+                            <input id="RADButDevYes" name="Developer" type="radio" value="Si" ref={register({ required: true })} />
                         </div>
                         <div>
                             <label id="LBLDevNo" className="ExceptRadio">N</label>
