@@ -13,8 +13,9 @@ const PlayGround = () => {
     const [submitted, setSubmitted] = useState(false);
 
     const onSubmit = data => { 
-        history.push("/result/");
         localStorage.setItem('myData', JSON.stringify(data));
+        history.push("/result/");
+
     
     }//alert(JSON.stringify(data));
   //  console.log(errors);
