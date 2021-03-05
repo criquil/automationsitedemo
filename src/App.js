@@ -4,14 +4,16 @@ import NavBar from './components/navbar';
 import HomeContent from './components/homeContent';
 import Footer from './components/footer';
 import WelcomePage from './components/welcome';
-import PlayGround from './components/playground';
+import PlayGround from './components/playground2';
 import Authenticated from './components/authenticated';
+import ResultData from "./components/result"
 import {
     BrowserRouter as Router,
     Switch,
     Route,
     Link
 } from 'react-router-dom';
+import { useAuth0 } from '@auth0/auth0-react';
 function App() {
     //export default function App() {
 
@@ -23,21 +25,27 @@ function App() {
 
                 <NavBar />
                 <Switch>
-                    <Route path="/home/">
-                  
-                        <HomeContent />
-                    
+                    <Route path="/result/">
+
+                        <ResultData title="Result Data" />
+
                     </Route>
-                    <Route path="/playground/">
-                  
-                        <PlayGround />
-                  
+                    <Route path="/lorem/">
+
+                        <HomeContent title="Lorem Ipsum" />
+
+                    </Route>
+                    <Route path="/forms/">
+
+                        <PlayGround title="Forms Page" />
+
                     </Route>
                     <Route path="/">
-                        
-                        <WelcomePage />
-                        
+
+                        <WelcomePage title="Homme Page" />
+
                     </Route>
+
                 </Switch>
                 <Footer />
             </div>

@@ -1,8 +1,11 @@
 import React from 'react'
 import { useAuth0 } from '@auth0/auth0-react'
+import IsLoading from "./isLoading"
 const PlayGround = () => {
     const { loginWithRedirect, isAuthenticated } = useAuth0();
-    if (isAuthenticated) {
+    const {isLoading} = useAuth0();
+    if (isLoading) return <div><IsLoading/></div>
+   else if (isAuthenticated) {
         return (
             <div>
                 <section className="container">
@@ -49,14 +52,15 @@ const PlayGround = () => {
                                 </div>
 
                                 <div>
-                                    <p>Please select your age:</p>
+                                <br></br>
+                                    <strong>Please select your age:</strong>
 
                                     <label for="age1"><input type="radio" id="age1" name="age" value="30" />0 - 30</label>
-                                    <br></br>
+                                   
                                     <label for="age2"><input type="radio" id="age2" name="age" value="60" />31 - 60</label>
-                                    <br></br>
+                                   
                                     <label for="age3"><input type="radio" id="age3" name="age" value="100" />61 - 100</label>
-                                    <br></br><br></br> <br></br>
+                                    <br></br>
                                 </div>
                                 <div>
                                     <label for="url">Personal Site URL</label>
@@ -89,7 +93,7 @@ const PlayGround = () => {
             <div onLoadStart={() => loginWithRedirect()}>
                 <br></br>
 
-                <h1 id="notLoggedTitleTXT">Welcome to my Atomation Testing Site</h1>
+                <h1 id="notLoggedTitleTXT">Welcome to my Automation Testing Site</h1>
                 <h3 id="notLoggedScreen">Please click Login button to log into the application or sign up!</h3>
             </div>
         )
